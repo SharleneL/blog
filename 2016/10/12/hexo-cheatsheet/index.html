@@ -122,7 +122,7 @@ Start the Hexo server on default port 4000
 
 hexo new [post-name]
 Create a new post named [post-n">
-<meta property="og:updated_time" content="2016-10-12T18:19:16.000Z">
+<meta property="og:updated_time" content="2016-10-21T21:36:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Cheatsheet">
 <meta name="twitter:description" content="Command
@@ -452,6 +452,18 @@ Create a new post named [post-n">
 <td style="text-align:left"><code>hexo new page &quot;categories&quot;</code></td>
 <td style="text-align:left">Create a ‘/categories’ folder under ‘/source’. After adding <code>type: &quot;categories&quot;</code> in the Front-matter of <code>/categories/index.md</code>, the content of <code>categorids/index.md</code> will be shown in <code>your-hexo-site-url/categories</code>.</td>
 </tr>
+<tr>
+<td style="text-align:left"><code>{</code> <code>% post_link post-name ClickToSeeThisPost %</code> <code>}</code></td>
+<td style="text-align:left">Inside one post, link to another post. By clicking “ClickToSeeThisPost”, will redirect to <code>prefix-post-name.md</code> (<code>prefix</code> is the prefix added to the post named based on the naming rule you set). If <code>&quot;ClickToSeeThisPost&quot;</code> is not set, the text will be shown as the post name by default.</td>
+</tr>
+<tr>
+<td style="text-align:left">Create drafts (<a href="http://jingyan.baidu.com/article/63f236280da7770208ab3d27.html" target="_blank" rel="external">reference</a>)</td>
+<td style="text-align:left">Use <code>hexo new draft &quot;new draft&quot;</code>, or move a post into <code>source/_draft/</code> folder.</td>
+</tr>
+<tr>
+<td style="text-align:left">Preview drafts</td>
+<td style="text-align:left">Start the server by <code>hexo server --drafts</code>, then the drafts can be previewed. However if using <code>hexo server</code>, you won’t see the drafts.</td>
+</tr>
 </tbody>
 </table>
 
@@ -593,7 +605,7 @@ Create a new post named [post-n">
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -601,7 +613,7 @@ Create a new post named [post-n">
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">categories</span>
               
             </div>
@@ -610,7 +622,7 @@ Create a new post named [post-n">
           
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">tags</span>
               
             </div>
